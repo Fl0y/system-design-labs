@@ -9,10 +9,10 @@
 
 > Cum ajută produsele existente un utilizator să urmărească informațiile despre piață și ce părți aparțin primei versiuni a acestui Dashboard?
 
-| Produs | Utilizatorul probabil și obiectivul său | Model reutilizabil |
-|---|---|---|
-| **Google Finance** | Un investitor individual care dorește să urmărească prețuri, grafice, știri și instrumentele financiare care îl interesează. | **Watchlist personal**, informații curente despre un activ, evoluție în timp și știri asociate. Google indică faptul că utilizatorul poate găsi cotații, grafice și știri financiare, precum și să creeze liste personale de instrumente urmărite |
-| **TradingView** | Un investitor sau trader care dorește să urmărească mai multe active și să le analizeze evoluția. | **Listă de active urmărite**, date esențiale despre active, știri și comparație vizuală a evoluției. TradingView arată că watchlist-urile permit adăugarea și eliminarea simbolurilor și urmărirea știrilor, datelor fundamentale și rezumatelor tehnice. |
+| Produs             | Utilizatorul probabil și obiectivul său                                                                                      | Model reutilizabil                                                                                                                                                                                                                                        |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Google Finance** | Un investitor individual care dorește să urmărească prețuri, grafice, știri și instrumentele financiare care îl interesează. | **Watchlist personal**, informații curente despre un activ, evoluție în timp și știri asociate. Google indică faptul că utilizatorul poate găsi cotații, grafice și știri financiare, precum și să creeze liste personale de instrumente urmărite         |
+| **TradingView**    | Un investitor sau trader care dorește să urmărească mai multe active și să le analizeze evoluția.                            | **Listă de active urmărite**, date esențiale despre active, știri și comparație vizuală a evoluției. TradingView arată că watchlist-urile permit adăugarea și eliminarea simbolurilor și urmărirea știrilor, datelor fundamentale și rezumatelor tehnice. |
 
 ### Decizia pentru prima versiune
 
