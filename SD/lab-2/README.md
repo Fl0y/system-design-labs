@@ -13,9 +13,9 @@ Pentru acest laborator sunt analizate următoarele citiri:
 
 ---
 
-## 1. Cerințe de calitate
+# 1. Cerințe de calitate
 
-O cerință de calitate este formulată folosind:
+<!-- O cerință de calitate este formulată folosind: -->
 
 ```text
 măsură + țintă + condiție de operare
@@ -92,6 +92,57 @@ Rezultă:
 
 Numărul real de zile de tranzacționare dintr-un interval de 30 zile poate varia; 22 este o ipoteză pentru estimarea laboratorului.
 
+### 1.2.1 Disponibilitate (Opțiune cu cerințe mai ușor realizabile)
+ 
+| Interval              | Țintă   |
+| --------------------- | ------- |
+| Ore de tranzacționare | **99%** |
+| Restul timpului       | **98%** |
+
+**Ore de tranzacționare:**
+
+```
+Timp măsurat:
+22 zile × 6,5 ore = 143 ore
+
+Disponibilitate țintă:
+99% = 0,99
+
+Buget de indisponibilitate:
+143 h × (1 − 0,99)
+= 143 h × 0,01
+= 1,43 h
+= 1 oră 25 minute 48 secunde
+```
+
+**Restul timpului:**
+
+Intervalul include orele din afara sesiunilor de tranzacționare și zilele fără tranzacționare.
+
+```
+Timp total:
+30 zile × 24 ore = 720 ore
+
+Timp în afara sesiunilor de tranzacționare:
+720 − 143 = 577 ore
+
+Disponibilitate țintă:
+98% = 0,98
+
+Buget de indisponibilitate:
+577 h × (1 − 0,98)
+= 577 h × 0,02
+= 11,54 h
+= 11 ore 32 minute 24 secunde
+```
+
+Rezultă:
+
+|Interval măsurat|Timp măsurat|Disponibilitate|Buget de indisponibilitate|
+|---|---|---|---|
+|Ore de tranzacționare|143 h|99%|1 h 25 min 48 s|
+|Restul timpului|577 h|98%|11 h 32 min 24 s|
+
 ### 1.3. Consistența Stock price
 
 Condițiile clientului precizează că întârzierea așteptată a furnizorului este de aproximativ **15 minute** și că datele mai vechi trebuie marcate ca întârziate sau indisponibile.
@@ -108,7 +159,7 @@ preț întârziat
 preț indisponibil
 ```
 
-Această regulă urmează principiul din Lecția 3 conform căruia datele vechi pot fi permise numai într-o limită definită și trebuie etichetate corespunzător.
+Această regulă urmează principiul conform căruia datele vechi pot fi permise numai într-o limită definită și trebuie etichetate corespunzător.
 
 ### 1.4. Consistența Watchlist
 
@@ -304,7 +355,7 @@ Pentru prima versiune a Personal Investment Dashboard definim un **Stock** astfe
 | Instrumente inactive/delistate | Păstrate numai în istoricul existent; nu pot fi adăugate ca Stocks active |
 | Monedă principală              | USD                                                                       |
 
-Limitarea la common stocks simplifică prima versiune și este compatibilă cu obiectivul Lab 1 de monitorizare a investițiilor fără extinderea Dashboard-ului într-un produs complet de tranzacționare.
+Limitarea la common stocks simplifică prima versiune și este compatibilă cu obiectivul primului laborator de monitorizare a investițiilor fără extinderea Dashboard-ului într-un produs complet de tranzacționare.
 
 ## 4.2. Numărul estimat de Stocks
 
@@ -328,7 +379,7 @@ Această valoare este o **estimare de planificare**, nu numărul exact de common
 
 ## 4.3. Date sincronizate
 
-Stocăm numai datele necesare fluxurilor definite în Lab 1 și Lab 2.
+Stocăm numai datele necesare fluxurilor definite în acest laborator și precedent.
 
 | Set de date       | Date necesare                            | Nevoia produsului                |
 | ----------------- | ---------------------------------------- | -------------------------------- |
@@ -339,7 +390,7 @@ Stocăm numai datele necesare fluxurilor definite în Lab 1 și Lab 2.
 
 ### Frecvența de sincronizare — ipoteze
 
-Pentru estimarea laboratorului presupunem:
+Pentru estimare presupunem:
 
 - latest price: sincronizare suficient de frecventă pentru a respecta limita de vechime de 15 minute;
 - price history: punct la fiecare **5 minute** în sesiunea principală;
@@ -506,7 +557,7 @@ Estimarea este pentru **date brute**. Nu include indexuri, replici, jurnale, cop
 
 ---
 
-# 5. Posibile blocaje
+# 5. Posibile blocaj
 
 Un RPS ridicat nu dovedește existența unui blocaj. El indică o cale care trebuie investigată și măsurată.
 
